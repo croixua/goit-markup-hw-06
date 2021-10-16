@@ -553,6 +553,10 @@ a:focus {
   margin-left: auto;
 }
 
+.form-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
 .footer-subscribe-title {
   font-weight: 700;
   font-size: 14px;
@@ -563,14 +567,10 @@ a:focus {
   color: var(--third-text-color);
 }
 
-.form {
-  display: flex;
-}
-
 .subscribe-input {
   padding: 14px;
   margin-right: 10px;
-  width: 100%;
+  flex-basis: calc(100% - 210px);
 
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -697,9 +697,12 @@ a:focus {
   margin-bottom: 12px;
 }
 
+.modal-field {
+  margin-bottom: 10px;
+}
+
 .modal-input {
   width: 100%;
-  margin-bottom: 10px;
   padding: 12px;
   padding-left: 41px;
 
@@ -718,8 +721,11 @@ a:focus {
   fill: var(--accent-color);
 }
 
-.modal-input.modal-input-text {
+.modal-comment {
   margin-bottom: 20px;
+}
+
+.modal-input.modal-input-text {
   padding: 12px 16px;
 
   resize: none;
@@ -752,14 +758,18 @@ a:focus {
   text-decoration: underline;
   color: var(--accent-color);
 }
-
+.modal-check {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
 .check-text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
 
   display: flex;
-  margin-bottom: 40px;
+
   align-items: center;
 }
 
