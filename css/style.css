@@ -263,8 +263,10 @@ a:focus {
 }
 
 .advantage-item {
-  min-width: 270px;
+  /* min-width: 270px; */
+  flex-basis: 270px;
 }
+
 .advantage-text {
   /* Typography */
   font-size: 14px;
